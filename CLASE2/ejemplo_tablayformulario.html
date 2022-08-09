@@ -1,0 +1,89 @@
+<!-- Para que me aparezca la carcasa de html pongo html:5 y enter -->
+<!-- para poder ver ejemplo_tabla en el navegador, voy a archivos/bilioteca y lo abro de ahi -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de tabla</title>
+</head>
+<!--Tabla-->
+<body>
+    <table border="6 px solid">
+        <thead>
+            <tr>
+                <th>
+                    DNI
+                </th>
+                <th>
+                    Nombre
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    20.331.221
+                </td>
+                <td>
+                    Jorge
+                </td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th> Página 1</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <form> <!--Formulario 1-->
+        Nombre: <input name="nombre" type="text" placeholder="Ingrese su nombre">
+        <br> Mail: <input name="mail" type="email" placeholder="Ingrese su mail">
+        <br> Contraseña: <input name="password" type="password" placeholder="Ingrese su contraseña">
+        <br> Edad: <input name="adulto" type="checkbox"> Soy mayor de 18
+        <br> <input name="sexo" type="radio" value="F"> Femenino
+        <br> <input name="sexo" type="radio" value="M"> Masculino
+    </form>
+
+    <br> Descripcion <br> 
+    <textarea name="descripcion" cols="30" rows="10" placeholder="Ingrese descripción"></textarea>
+
+    <hr> <!--Formulario 2 -->
+    <form>
+        <fieldset>
+            <legend>Información Persona</legend>
+            <label for="nombre"> Nombre: </label> <input name="nombre" type="text" tabindex="1">
+            <label for="apellido"> Apellido: </label> <input name="apellido" type="text" tabindex="2">
+            <label for="fechanac"> Fecha de Nacimiento: </label> <input name="fechanac" type="date"
+            min="2002/11/29" max="2010/12/31" tabindex="3">
+        </fieldset>
+        <fieldset>
+            <legend> INformación de la Compra</legend>
+            <label for="producto"> Producto: </label> <input name="producto" type="text" tabindex="4">
+            <label for="cantidad"> Cantidad: </label> <input name="cantidad" type="number" tabindex="5">
+            <label for="monto"> Monto: </label> <input name="monto" type="number" step="0.01" tabindex="6">
+        </fieldset>
+        <hr>
+        <!--Para indicar un lenguaje de programación-->
+        <select name="lenguaje">
+            <option value="js">Javascript</option>
+            <option value="java" selected>Java</option>
+            <option value="python">Python</option>
+            <option value="otros">Otros</option>
+        </select>
+        <!--Para seleccionar los intereses:-->
+        <hr>
+    <select name="intereses" multiple>
+        <option value="arte">Arte</option>
+        <option value="deportes" selected>Deportes</option>
+        <option value="cine">Cine</option>
+        <option value="autos">Autos</option>
+        <option value="otros">Otros</option>
+    </select>
+    </form>
+</body>
+</html>
