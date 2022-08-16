@@ -1,0 +1,61 @@
+/* el asterisco es para que abarque todo */
+
+body{
+    margin: 0px;
+}
+/* esto dice que no hay margen */
+
+#main{
+    background-color: rgb(86, 166, 166);
+}
+
+nav{
+    background-color: beige;
+    display:flex;
+    flex-direction: row;
+    height: 110px;
+}
+/* como en index.html hay solo un nav, no le tengo que poner ninguna referencia */
+/* mediante flex transformamos la botonera, estaba abajo de la imagen y ahora al costado */
+
+nav ul {
+   display: flex
+}
+/* esto es para que las listas adentro del nav las muestre como un flex */
+
+nav li{
+    margin-left: 20px;
+    list-style: none; 
+}
+/* list style:none esto le saca el punto a inicio, sobre nosotros y contacto */
+
+nav a{
+    text-decoration: none;
+    color:black
+}
+/* esto le saca el subrayado a inicio, sobre nosotros y contacto */
+
+nav a:hover{
+    color: rgb(9, 54, 108);
+    background-color: rgb(16, 173, 241);
+}
+/* esto es para colorear el fondo de inicio, sobre nosotros y contacto cuando pasas el mouse por encima */
+
+
+nav img{
+    display: flex;
+    max-height: 50px;
+    width: auto
+}
+/* esto es para que la imagen tenga un tamaño de 50vw, que es el 50% del ancho de la pantalla */
+/* hay que agregarle display flex pq esta adentro del nav */
+
+.menuButton{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px
+}
+/* esto es para alinear al centro inicio, sobre nosotros y contacto */
