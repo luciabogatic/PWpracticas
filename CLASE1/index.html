@@ -1,7 +1,9 @@
+<!-- Si pongo html:5 se me pone solo la predeterminacion de html5 -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- usamos este charset para que lea todos los acentos y demas caracteres especiales -->
     <title>Mi pagina de prueba</title>
     <!-- para leer una hoja de estilo hacemos el siguiente comando de link-->
     <link rel="stylesheet" href="./styles.css">
@@ -9,7 +11,7 @@
   <body>
     <div>
         <nav class="menu">
-            <img src="/assets/img/logo_ucema.png" alt="" width="200"> 
+            <img src="/assets/img/logo_biteme.png" alt="logo_biteme" width="200"> 
             <!-- Para que se me ponga sola la imagen pongo la barrita y desp le voy dando enter -->
             <div class="menuButton">
               <ul>
@@ -22,12 +24,12 @@
     </div>
     <section id="main">
         <div>
-            <h1>Pirelli 150th Celebration!</h1>
-            <video src="/assets/video/video1.mp4" alt="Video" autoplay controls muted loop width="200" type="video/mp4">
+            <h1>BITE ME</h1>
+            <video src="../assets/video/video2.mp4" alt="Video" autoplay controls muted loop width="200" type="video/mp4">
             Tu navegador no admite el elemento <code>video</code>
             </video>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> A nobis provident voluptatibus, deleniti, optio facere dolore ratione dicta deserunt consequatur harum! Ea quia reiciendis, <br> cupiditate exercitationem corporis odio error! Quo.<br>
+            Bienvenidos a Bite Me!<br> En esta página encontrarán alimentos saludables para perros
             </p>
             <button id="btnPpl">
                 Click
@@ -38,24 +40,22 @@
     <section id="Atributos">
       <div>
         <h1>Atributos</h1>
-        <h3>History</h3>
+        <h3>Nuestra historia</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non a asperiores illum sed modi animi, voluptates nisi, quaerat libero tempora, labore cum maiores expedita quibusdam esse cumque earum odit sequi.
+          Les cuento como surge Bite Me. Soy chef recibida en La Plata, ciudad donde vivimos. <br> Hace unos meses comencé con la idea de unir dos de mis grandes pasiones: la cocina y los animales. <br> Empezó de mi parte como madre perruna, el querer informarme más sobre su alimentación <br> y comencé a cocinarle snacks ricos pero realmente sanos para ella. <br> Le encantaron, por eso quise compartirlos con ustedes!
         </p>
-        <h3>Clasification</h3>
+        <h3>Nosotras</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iusto facilis natus. Perspiciatis nobis id labore sapiente aliquam ut ad ipsum. Cumque, aliquid molestiae odit blanditiis suscipit dolorem amet vitae?
+          Ofrecemos a sus perritos una opción deliciosa y 100% natural, con materias primas <br> seleccionadas especialmente para ellos! Opto por recetas con productos frescos, sin <br> conservantes, saborizantes ni colorantes artificiales, pero super sabrosos! Hechos en <br> casa, como si fueran para Ipa
         </p>
       </div>
     </section>
 
-    <section id="Perfil">
-      <div class="col-md-6 col-lg-3 text-center team mb-5">
-        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
-          <img class="img-fluid w-100" src="/assets/img2/marcotronchetti.jpg" alt="" width="200">
-        </div>
-        <h4>Marco Tronchetti Provera</h4>
-        <i>CEO de Pirelli</i>
+    <section id="foto_ipa">
+      <div>
+        <img class="img-fluid w-100" src="/assets/img/foto_ipa_cocinera.jpeg" alt="" width="200">
+        <h4>Hechos en casa</h4>
+        <i>Como si fuesen para Ipa</i>
       </div>
     </section>
 
@@ -64,19 +64,18 @@
         <h1>Formulario</h1>
         <form action="index.html" method="post">
           <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+          <input type="text" name="nombre" id="nombre" placeholder="Ingresar Nombre">
           <br>
           <label for="apellido">Apellido</label>
-          <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+          <input type="text" name="apellido" id="apellido" placeholder="Ingresar Apellido">
           <br>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="email" name="email" id="email" placeholder="Ingresar Email">
           <br>
           <label for="telefono">Telefono</label>
-          <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
-          <br>
-          <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          <input type="tel" name="telefono" id="telefono" placeholder="Ingresar Teléfono">
+          <br>Mensaje<br> <!--otra forma es <label for="mensaje">Mensaje</label>-->
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresar Mensaje"></textarea>
           <br>
           <input type="submit" value="Enviar">
         </form>
@@ -86,9 +85,13 @@
   </body>
 
     <footer>
-        <h2>Contact Info</h2>
-        <h5>Mail:pirelli@gmail.com</h5>
-        <h5>Phone: +543442895472</h5>
+        <h2>Información de contacto:</h2>
+        <h5>Mail: <i>biteme.snacks.lp@gmail.com</i></h5>
+        <h5>Celular: +54 3442-473900</h5>
+        <h5>Seguinos en instagram:</h5>
+        <a href="https://instagram.com/bitemesnacks?igshid=YmMyMTA2M2Y=">
+          <img src="/assets/img/logo_instagram.svg" alt="logo instagram" width="50">
+        </a>
     </footer>
 
 </html>

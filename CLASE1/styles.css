@@ -1,16 +1,30 @@
 /* el asterisco es para que abarque todo */
 
 body{
-    margin: 0px;
+    margin: 0px; /* esto dice que no hay margen */
+    background-color: white;
+    background-image: image();
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px dotted rgb(255, 140, 0); /*dotted le pongo puntitos*/
+    padding: 10px 10px 10px 10px; /*es el espacio entre el borde y el contenido*/
+    font-family: Georgia, 'Times New Roman', Times, serif; /* es el estido de la fuenta*/
 }
-/* esto dice que no hay margen */
+/* no me funciona lo del body */
+div{
+    padding: 20px
+}
 
 #main{
-    background-color: rgb(86, 166, 166);
+    background-color: rgb(255, 106, 0);
+}
+
+#Formulario{
+    background-color: rgb(232, 189, 158);
 }
 
 nav{
-    background-color: beige;
+    background-color: rgb(241, 217, 195);
     display:flex;
     flex-direction: row;
     height: 110px;
@@ -19,32 +33,30 @@ nav{
 /* mediante flex transformamos la botonera, estaba abajo de la imagen y ahora al costado */
 
 nav ul {
-   display: flex
+   display: flex /* esto es para que las listas adentro del nav las muestre como un flex */
 }
-/* esto es para que las listas adentro del nav las muestre como un flex */
+
 
 nav li{
     margin-left: 20px;
-    list-style: none; 
+    list-style: none; /* esto le saca el punto a inicio, sobre nosotros y contacto */
 }
-/* list style:none esto le saca el punto a inicio, sobre nosotros y contacto */
 
 nav a{
-    text-decoration: none;
-    color:black
+    text-decoration: none; /* esto le saca el subrayado a inicio, sobre nosotros y contacto */
+    color:rgb(0, 0, 0)
 }
-/* esto le saca el subrayado a inicio, sobre nosotros y contacto */
+
 
 nav a:hover{
-    color: rgb(9, 54, 108);
-    background-color: rgb(16, 173, 241);
+    color: rgb(248, 248, 248);
+    background-color: rgb(255, 106, 0);
 }
 /* esto es para colorear el fondo de inicio, sobre nosotros y contacto cuando pasas el mouse por encima */
 
-
 nav img{
     display: flex;
-    max-height: 50px;
+    max-height: 115px;
     width: auto
 }
 /* esto es para que la imagen tenga un tamaño de 50vw, que es el 50% del ancho de la pantalla */
