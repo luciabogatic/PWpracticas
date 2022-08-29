@@ -3,12 +3,14 @@
 body{
     margin: 0px; /* esto dice que no hay margen */
     background-color: white;
-    background-image: image();
+    /*background-image: url("");*/
     margin-left: 20%;
     margin-right: 20%;
-    border: 2px dotted rgb(255, 140, 0); /*dotted le pongo puntitos*/
+    /*border: 2px dotted rgb(255, 140, 0); dotted le pongo puntitos*/
     padding: 10px 10px 10px 10px; /*es el espacio entre el borde y el contenido*/
     font-family: Georgia, 'Times New Roman', Times, serif; /* es el estido de la fuenta*/
+    background-repeat: no-repeat; 
+    background-size:100% /*es para que ocupe el 100% de la pnatalla*/
 }
 /* no me funciona lo del body */
 div{
@@ -19,9 +21,19 @@ div{
     background-color: rgb(255, 106, 0);
 }
 
-#Formulario{
-    background-color: rgb(232, 189, 158);
+
+/*
+#Productos {
+    background-color: rgb(255, 106, 0);
+    display:flex;
+    flex-direction: row
 }
+*/
+
+#feedback{
+    background-color: whitesmoke;
+}
+
 
 nav{
     background-color: rgb(241, 217, 195);
@@ -47,7 +59,6 @@ nav a{
     color:rgb(0, 0, 0)
 }
 
-
 nav a:hover{
     color: rgb(248, 248, 248);
     background-color: rgb(255, 106, 0);
@@ -65,9 +76,33 @@ nav img{
 .menuButton{
     display: flex;
     align-items: center;
-    align-items: center;
     justify-content: flex-end;
     width: 100%;
     padding: 20px
 }
 /* esto es para alinear al centro inicio, sobre nosotros y contacto */
+
+
+#elixirs { /*saca una div del flujo de navegacion y lo muestra a la derecha*/
+    border: thin solid;
+    border-color: rgb(255, 106, 0);
+    width: 200px;
+    padding: 0px 20px 20px 20px;
+    margin-left: 20px;
+    text-align: center;
+    background-image:none;
+    background-repeat: rgb(255, 106, 0);
+    line-height: 1;
+    float: right
+
+}
+.roww{
+    display: flex;
+    justify-content: space-between;
+
+}
+.cookie{
+    display: flex;
+    order: 2
+
+}
