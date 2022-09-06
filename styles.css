@@ -4,34 +4,28 @@ body{
     margin: 0px; /* esto dice que no hay margen */
     background-color: white;
     /*background-image: url("");*/
-    margin-left: 20%;
-    margin-right: 20%;
+    /*margin-left: 20%;
+    margin-right: 20%;*/
     /*border: 2px dotted rgb(255, 140, 0); dotted le pongo puntitos*/
     padding: 10px 10px 10px 10px; /*es el espacio entre el borde y el contenido*/
     font-family: Georgia, 'Times New Roman', Times, serif; /* es el estido de la fuenta*/
     background-repeat: no-repeat; 
     background-size:100% /*es para que ocupe el 100% de la pnatalla*/
 }
-/* no me funciona lo del body */
+
 div{
     padding: 20px
 }
 
-#main{
-    background-color: rgb(255, 106, 0);
-}
+
+/*productos*/
 
 
-/*
-#Productos {
-    background-color: rgb(255, 106, 0);
-    display:flex;
-    flex-direction: row
-}
-*/
 
-#feedback{
+.card-footer{
     background-color: whitesmoke;
+    padding: 10px;
+    text-align: center;
 }
 
 
@@ -47,7 +41,6 @@ nav{
 nav ul {
    display: flex /* esto es para que las listas adentro del nav las muestre como un flex */
 }
-
 
 nav li{
     margin-left: 20px;
@@ -73,17 +66,67 @@ nav img{
 /* esto es para que la imagen tenga un tamaño de 50vw, que es el 50% del ancho de la pantalla */
 /* hay que agregarle display flex pq esta adentro del nav */
 
+
 .menuButton{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
     padding: 20px
+}/* esto es para alinear al centro inicio, sobre nosotros y contacto */
+
+
+/*PRESENTACION*/
+#presentacion2{
+    text-align: center;
+    background-color: rgb(255, 106, 0);
 }
-/* esto es para alinear al centro inicio, sobre nosotros y contacto */
 
 
-#elixirs { /*saca una div del flujo de navegacion y lo muestra a la derecha*/
+/*NOSOTRAS*/
+#nosotras{
+    color: white; 
+    text-align: right;
+}
+
+
+
+/*FORMULARIO*/
+#Formulario{
+    background-color: whitesmoke;
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+/*FEEDBACK*/
+#feedback{
+    background-color: whitesmoke;
+}
+
+
+
+/*FORMULARIO*/
+#formulario{
+    background-color: whitesmoke
+}
+
+
+
+/*BENEFICIOS*/
+#beneficios{
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+
+/*PROMO*/
+#promo{ /*saca una div del flujo de navegacion y lo muestra a la derecha*/
     border: thin solid;
     border-color: rgb(255, 106, 0);
     width: 200px;
@@ -94,15 +137,50 @@ nav img{
     background-repeat: rgb(255, 106, 0);
     line-height: 1;
     float: right
-
 }
-.roww{
-    display: flex;
-    justify-content: space-between;
 
-}
-.cookie{
-    display: flex;
-    order: 2
 
+
+.accordion-button:not(.collapsed){
+    background-color: rgb(241, 217, 195);
+    color: white;
 }
+
+
+
+/*CIRCULOS*/
+#contacto{
+    background-color: rgb(251, 179, 135);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.img_redes img {
+    border-radius: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+
+
+/*PREGUNTAS*/
+#preguntas{
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
+
+
+/*FOOTER*/
+footer section{
+    display:flex
+   }
+
+   footer{
+    background-color:rgb(255, 106, 0); 
+    display:flex;
+    justify-content: space-evenly;
+   }
