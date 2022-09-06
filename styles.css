@@ -13,6 +13,19 @@ body{
     background-size:100% /*es para que ocupe el 100% de la pnatalla*/
 }
 
+h1{
+    font-family: "Lilita One", cursive
+}
+
+h2{
+    font-family: "Lilita One", cursive
+}
+
+h3{
+    font-family: "Lilita One", cursive
+}
+
+
 div{
     padding: 20px
 }
